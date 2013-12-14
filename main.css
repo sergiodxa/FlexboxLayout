@@ -1,0 +1,16 @@
+footer,header{background:#b2b2b2;overflow:hidden;padding:10px;text-align:center}
+footer{line-height:25px}
+h1{margin:0}
+header{line-height:75px}
+#wrapper{display:flex;flex-flow:row;}
+#wrapper aside,#wrapper section{display:flex;flex-grow:1;}
+#wrapper aside article,#wrapper section article,#wrapper aside div,#wrapper section div{color:#fdfdfd;background:#666;flex-grow:1;margin:10px;padding:5px;}
+#wrapper aside article h2,#wrapper section article h2,#wrapper aside div h2,#wrapper section div h2{margin:0}
+#wrapper aside article p,#wrapper section article p,#wrapper aside div p,#wrapper section div p{margin:5px 0}
+#wrapper aside{flex-flow:column;background:#ccc;width:15.625%}
+#wrapper section{flex-flow:row;width:84.375%}
+@media screen and (max-width: 1000px) and (min-width: 640px){#wrapper section{flex-flow:column}
+}@media screen and (max-width: 640px){#wrapper{flex-flow:column;}
+#wrapper aside{order:2;width:auto}
+#wrapper section{flex-flow:column;order:1;width:auto}
+}

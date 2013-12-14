@@ -1,0 +1,60 @@
+footer
+header
+	background #b2b2b2
+	overflow hidden
+	padding 10px
+	text-align center
+
+footer
+	line-height 25px
+
+h1
+	margin 0
+
+header
+	line-height 75px
+
+#wrapper
+	display flex
+	flex-flow row
+
+	aside
+	section
+		display flex
+		flex-grow 1
+		article
+		div
+			color #fdfdfd
+			background #666666
+			flex-grow 1
+			margin 10px
+			padding 5px
+			h2
+				margin 0
+			p
+				margin 5px 0
+
+	aside
+		flex-flow column
+		background #cccccc
+		width 15.625%
+
+	section
+		flex-flow row
+		width 84.375%
+
+@media screen and (max-width: 1000px) and (min-width: 640px)
+	#wrapper
+		section
+			flex-flow column
+
+@media screen and (max-width: 640px)
+	#wrapper
+		flex-flow column
+		aside
+			order 2
+			width auto
+		section
+			flex-flow column
+			order 1
+			width auto
