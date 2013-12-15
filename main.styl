@@ -1,3 +1,21 @@
+flexbox()
+	display -webkit-box
+	display -moz-box
+	display -ms-flexbox
+	display -webkit-flex
+	display flex
+flex()
+	-webkit-box-flex arguments
+	-moz-box-flex arguments
+	-ms-flex arguments
+	flex arguments
+order()
+	-webkit-box-ordinal-group arguments
+	-moz-box-ordinal-group arguments
+	-ms-flex-order arguments
+	-webkit-order arguments
+	order arguments
+
 footer
 header
 	background #b2b2b2
@@ -15,18 +33,32 @@ header
 	line-height 75px
 
 #wrapper
+	display -webkit-box
+	display -moz-box
+	display -ms-flexbox
+	display -webkit-flex
 	display flex
 	flex-flow row
 
 	aside
 	section
+		display -webkit-box
+		display -moz-box
+		display -ms-flexbox
+		display -webkit-flex
 		display flex
-		flex-grow 1
+		-webkit-box-flex 1
+		-moz-box-flex 1
+		-ms-flex 1
+		flex 1
 		article
 		div
 			color #fdfdfd
 			background #666666
-			flex-grow 1
+			-webkit-box-flex 1
+			-moz-box-flex 1
+			-ms-flex 1
+			flex 1
 			margin 10px
 			padding 5px
 			h2
@@ -52,9 +84,17 @@ header
 	#wrapper
 		flex-flow column
 		aside
+			-webkit-box-ordinal-group 2
+			-moz-box-ordinal-group 2
+			-ms-flex-order 2
+			-webkit-order 2
 			order 2
 			width auto
 		section
 			flex-flow column
+			-webkit-box-ordinal-group 1
+			-moz-box-ordinal-group 1
+			-ms-flex-order 1
+			-webkit-order 1
 			order 1
 			width auto
