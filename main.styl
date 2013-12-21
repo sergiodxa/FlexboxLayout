@@ -38,7 +38,8 @@ header
 	display -ms-flexbox
 	display -webkit-flex
 	display flex
-	flex-flow row
+	-moz-flex-direction row
+	flex-direction row
 
 	aside
 	section
@@ -61,22 +62,25 @@ header
 				margin 5px 0
 
 	aside
-		flex-flow column
+		-moz-flex-direction column
+		flex-direction column
 		background #cccccc
 		width 25%
 
 	section
-		flex-flow row
+		-moz-flex-direction row
+		flex-direction row
 		width 75%
 
 @media screen and (max-width: 1000px) and (min-width: 640px)
 	#wrapper
 		section
-			flex-flow column
+			-moz-flex-direction column
+			flex-direction column
 
 @media screen and (max-width: 640px)
 	#wrapper
-		flex-flow column
+		flex-direction column
 		aside
 			-webkit-box-ordinal-group 2
 			-moz-box-ordinal-group 2
@@ -85,7 +89,8 @@ header
 			order 2
 			width auto
 		section
-			flex-flow column
+			-moz-flex-direction column
+			flex-direction column
 			-webkit-box-ordinal-group 1
 			-moz-box-ordinal-group 1
 			-ms-flex-order 1
