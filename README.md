@@ -1,5 +1,6 @@
 FlexboxLayout
 =============
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 Ejemplo de layout hecho con Flexbox en CSS3 para un tutorial escrito en Cristalab.
 
